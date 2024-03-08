@@ -237,7 +237,7 @@ def game_loop():
             canvas.blit(fire_img, fire_img_rect)
             mario.update()
             for f in flames_list:
-                if f.flames_img_rect.colliderect(mario.mario_img_rect): #sdsdasd
+                if f.flames_img_rect.colliderect(mario.mario_img_rect):
                     game_over()
                     if SCORE > mario.mario_score:
                         mario.mario_score = SCORE
